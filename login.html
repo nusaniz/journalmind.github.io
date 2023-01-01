@@ -15,9 +15,9 @@
         rel="stylesheet">
     <style>
         * {
-            /* box-sizing: border-box;
+            box-sizing: border-box;
             padding: 0;
-            margin: 0; */
+            margin: 0;
         }
 
         body {
@@ -26,6 +26,12 @@
             /* background-image: url(http://my.uinsa.ac.id/assets/new/car2.png); */
             /* background-repeat: no-repeat; */
             background-size: contain;
+        }
+
+        @media only screen and (max-width: 768px) {
+            section#login .container .row .satu {
+                display: none;
+            }
         }
     </style>
 
@@ -86,15 +92,37 @@
         .opening {
             padding: 0 1rem;
         }
+
+        section#login button {
+            background-color: #54b4d3;
+            color: white;
+            border-radius: 2px;
+            padding: 10px 0;
+            font-weight: 500;
+            font-size: 13px;
+            box-shadow: 0 4px 9px -4px #54b4d3;
+        }
+
+        section#login button:hover {
+            background-color: #389bbd;
+            box-shadow: 0 4px 9px -4px #54b4d3;
+
+        }
     </style>
     <section id="login">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 satu">
                     <div class="opening">
-                        <h1>Kampus UINSA</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, numquam. Hic, qui alias
-                            laudantium quos voluptatem eos ullam beatae deleniti, ad dicta id nulla doloribus!</p>
+                        <h1>UINSA Campus</h1>
+                        <p>Universitas Islam Negeri Sunan Ampel Surabaya | Building Character Qualities: For the Smart,
+                            Pious, Honorable Nation.</p>
+
+                        <!-- <div class="foto">
+                            <img src="./assets/car2.png" width="150px" alt="">
+                            <img src="./assets/car2.png" width="150px" alt="">
+                            <img src="./assets/car2.png" width="150px" alt="">
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -121,7 +149,7 @@
                                 <div class="col-sm-10">
                                     <div class="halo">
 
-                                        <button type="submit" class="btn btn-primary">Login</button>
+                                        <button type="submit" class="btn btn-info">LOGIN</button>
                                     </div>
                                 </div>
                             </div>
